@@ -4,8 +4,34 @@ let doller100 = document.getElementById("doller100");
 let doller190 = document.getElementById("doller190");
 
 lb5Btn.addEventListener("click", () => {
-  doller100.removeAttribute("hidden");
+  if (doller100.hidden) {
+    doller100.hidden = false;
+  } else {
+    doller100.hidden = true;
+  }
 });
+// lb10Btn.addEventListener("click", () => {
+//   if (doller190.hidden) {
+//     doller190.hidden = false;
+//   } else {
+//     doller190.hidden = true;
+//   }
+// });
+
+// let lb5Btn = document.getElementById("lb5Btn");
+// let lb10Btn = document.getElementById("lb10Btn");
+// let doller100 = document.getElementById("doller100");
+// let doller190 = document.getElementById("doller190");
+
+// lb5Btn.addEventListener("click", () => {
+//   doller100.hidden = !doller100.hidden; // toggle hidden
+//   doller190.hidden = true; // অন্য দাম লুকিয়ে দাও
+// });
+
+// lb10Btn.addEventListener("click", () => {
+//   doller190.hidden = !doller190.hidden;
+//   doller100.hidden = true;
+// });
 
 // Plus Minus JS Start
 
@@ -55,3 +81,5 @@ arr.map((item) => {
 
 // Counter Up End
 
+
+console.log("HI")
